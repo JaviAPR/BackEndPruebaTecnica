@@ -2,6 +2,7 @@
 # Back-End prueba tecnica con Java SpringBoot
 
 En este repositorio se encuentra la todo el codigo hecho para el back-end de la prueba, se la estructura de carpetas esta compuesta por Repository, Service, Controller y Config.
+Tambien hay un archivo de Insomnia donde se encuentran las peticiones probadas con Insomnia.
 
 
 
