@@ -33,7 +33,44 @@ En este repositorio se encuentra la todo el codigo hecho para el back-end de la 
 | :-------- | :------- | :-------------------------------- |
 | `nombre`      | `string` | **Required**. Id of item to fetch |
 
+#### Register Item
 
+```http
+  POST /negocio/registrar
+```
+
+| Parameter | Type     | Description   Example                    |
+| :-------- | :------- | :-------------------------------- |
+| `body`      | `Json` |  {"nombre": "Arroz",
+                                   "descripcion" : "es un producto agregado",
+                                   "precio":12800,
+                                   "categoria": "alimentos"
+                                 } |
+
+
+#### Update Item
+
+```http
+  PUT /negocio/actualizar/{id}
+```
+
+| Parameter | Type     | Description   Example                    |
+| :-------- | :------- | :-------------------------------- |
+| `body`      | `Json` |  {"nombre": "Arroz",
+                                   "descripcion" : "es un producto actualizado",
+                                   "precio":14800,
+                                   "categoria": "alimentos"
+                                 } |
+
+#### Delete item by id
+
+```http
+  Delete /negocio/borrar/{id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
 ## Features
 
 - Mostrar todos los productos
@@ -57,4 +94,5 @@ Para ejecutar el api es necesario ajustar en la carpeta main/resources el archiv
     spring.jpa.hibernate.ddl-auto=update
     spring.jpa.show-sql=true
 ```
+    
     
